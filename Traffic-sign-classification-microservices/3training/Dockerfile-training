@@ -1,0 +1,12 @@
+FROM ubuntu
+
+RUN apt-get update && apt-get install -y python3 python3-pip
+RUN pip3 install scikit-learn numpy tqdm tensorflow keras matplotlib
+
+# Set the working directory
+WORKDIR /work
+
+# Add python-script
+COPY Traffic_sign_classification-checkpoint-highaccuracy.py /work
+
+ENTRYPOINT ["python3", "Traffic_sign_classification-checkpoint-highaccuracy.py"]
