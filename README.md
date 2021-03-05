@@ -7,4 +7,4 @@ Narges Mehran, Dragi Kimovski and Radu Prodan. "A Two-Sided Matching Model for D
 ## Contributors:
 	1.Narges Mehran (PhD Student, Alpen-Adria Universitat Klagenfurt, Austria)
 	2.Dragi Kimovski (PostDoc, Alpen-Adria Universitat Klagenfurt, Austria)
-	Contact: narges(at)itec.aau.at
+	Contact: narges(at)itec.aau.at ; dragi.kimovski(at)aau.at
