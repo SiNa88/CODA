@@ -1,0 +1,20 @@
+t-1:
+- 'encoding'
+- 'training'
+#- 'packaging'
+e-0:
+- 'encoding'
+- 'training'
+#- 'packaging'
+e-1:
+- 'encoding'
+- 'training'
+#- 'packaging'
+e-2:
+- 'encoding'
+- 'training'
+#- 'packaging'
+vm1-cdc: 
+- 'encoding'
+- 'training'
+#- 'packaging'
