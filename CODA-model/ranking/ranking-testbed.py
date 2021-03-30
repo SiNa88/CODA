@@ -134,26 +134,15 @@ for j in range(len(resources)):
 	##print ()
 
 
-summatching = [0 for i in range(3)]
-sumedge = [0 for i in range(3)]
-sumcloud = [0 for i in range(3)]
-max_summatching = 0	
-max_sumedge = 0
-max_sumcloud = 0	
-'''
-#			0	  1	           2              3
-microservices = ["encoding", "lowAccuracy", "highAccuracy ", "transcoding"]
-#		0	1      2     3     4     
-resources = ["vm1-cdc","t-2","e-0","e-1","e-2"]
-'''
 
-summatching = 0
+
+sumcoda = 0
 sumcp = 0
 sumcloud = 0
 sumrtrrp = 0
 
 if(T[0][1] != 0 and T[1][0] != 0 and T[2][1] != 0 ):
-		summatching = T[0][1] + T[1][0] + T[2][1] - (2*lat[1]) - (2*lat[1]) 
+		sumcoda = T[0][1] + T[1][0] + T[2][1] - (2*lat[1]) - (2*lat[1]) 
 
 if(T[0][2] != 0 and T[1][1] != 0 and T[2][0] != 0 ):
 		sumcp = T[0][2] + T[1][1] + T[2][0]     - (2*lat[1])
@@ -166,7 +155,7 @@ if(T[0][0] != 0 and T[1][0] != 0 and T[2][0] != 0 ):
 
 print()
 print("------------------Time------------------")
-print("CODA: "    ,numpy.round(summatching,4))
+print("CODA: "    ,numpy.round(sumcoda,4))
 print("CloudPath: "    ,numpy.round(sumcp,4))
 print("RTR-RP: "   ,numpy.round(sumrtrrp,4))
 print("CloudOnly: "   ,numpy.round(sumcloud,4))
@@ -175,42 +164,13 @@ print()
 
 print()
 
-'''print("------------------Traffic---------------")
-sum_traffic_matching = 0
-for i in range(SIZE):
-	sum_traffic_matching += ((seg_size[index_of_segment])+(seg_size[index_of_segment]))#+(seg_size[4])
-sum_traffic_matching+=video_size[4]
-print ("CODA: ", numpy.round(sum_traffic_matching/1024/1024/8,0) , "MB")
 
-
-sum_traffic_cp = 0
-for i in range(SIZE):
-	sum_traffic_cp += ((seg_size[index_of_segment])+(seg_size[index_of_segment])+(seg_size[index_of_segment]))
-sum_traffic_cp+=video_size[4]
-print ("CloudPath: ", numpy.round(sum_traffic_cp/1024/1024/8,0) , "MB")
-
-
-sum_traffic_cloud = 0
-for i in range(SIZE):
-	sum_traffic_cloud += ((seg_size[index_of_segment])+(seg_size[index_of_segment]))
-sum_traffic_cloud+=video_size[4]
-print ("CloudOnly: ", numpy.round(sum_traffic_cloud/1024/1024/8,0) , "MB")
-
-
-sum_traffic_rtrrp = 0
-for i in range(SIZE):
-	sum_traffic_rtrrp += ((seg_size[index_of_segment])+(seg_size[index_of_segment]))#+(seg_size[index_of_segment]))
-sum_traffic_rtrrp+=video_size[4]
-print ("RTR-RP: ", numpy.round(sum_traffic_rtrrp/1024/1024/8,0) , "MB")
-print("----------------------------------------")
-print()
-'''
 print("------------------TrafficIntensity---------------")
-sum_traffic_matching = 0
+sum_traffic_coda = 0
 for i in range(SIZE):
-	sum_traffic_matching += ((seg_size[index_of_segment]/thrput_commu_Lenovo_EGS[index_of_segment])+(seg_size[index_of_segment]/thrput_commu_Lenovo_AWSFrank[index_of_segment])+(seg_size[index_of_segment]/thrput_commu_Lenovo_AWSFrank[index_of_segment])+(seg_size[index_of_segment]/thrput_commu_Lenovo_EGS[index_of_segment]))
-sum_traffic_matching+=(video_size[index_of_segment]/thrput_commu_Lenovo_EGS[index_of_segment])#/BW_r[1])
-print ("CODA: ", sum_traffic_matching)#numpy.round(sum_traffic_matching/1024/1024/8,0) , "MB")
+	sum_traffic_coda += ((seg_size[index_of_segment]/thrput_commu_Lenovo_EGS[index_of_segment])+(seg_size[index_of_segment]/thrput_commu_Lenovo_AWSFrank[index_of_segment])+(seg_size[index_of_segment]/thrput_commu_Lenovo_AWSFrank[index_of_segment])+(seg_size[index_of_segment]/thrput_commu_Lenovo_EGS[index_of_segment]))
+sum_traffic_coda+=(video_size[index_of_segment]/thrput_commu_Lenovo_EGS[index_of_segment])#/BW_r[1])
+print ("CODA: ", sum_traffic_coda)#numpy.round(sum_traffic_coda/1024/1024/8,0) , "MB")
 
 
 sum_traffic_cp = 0
