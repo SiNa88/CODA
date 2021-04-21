@@ -10,6 +10,7 @@ WORKDIR /work
 
 # Add the data
 ADD traffic_sign_seq_highaccuracy.h5 /work
+ADD frame203.jpg /work
 #RUN unzip data.zip
 
 # Add python-script
