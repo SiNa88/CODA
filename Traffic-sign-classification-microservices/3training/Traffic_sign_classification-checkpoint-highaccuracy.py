@@ -226,7 +226,7 @@ model.evaluate(x=X_test, y=y_test)
 
 
 # Save the entire model to a HDF5 file.
-model.save('traffic_sign_seq_highaccuracy')
+model.save('traffic_sign_seq_highaccuracy.h5')
 
 
 elapsedTrain = time.perf_counter() - start
