@@ -4,7 +4,7 @@ import cv2
 import glob
 import pickle
 import numpy as np
-import pandas as pd
+#import pandas as pd
 import matplotlib.pyplot as plt
 
 from tensorflow.keras.models import load_model
