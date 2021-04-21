@@ -16,9 +16,9 @@ from tensorflow.keras.applications.resnet50 import preprocess_input, decode_pred
 
 
 start = time.perf_counter()
-model = load_model('traffic_sign_seq_highaccuracy.h5', compile = True)
+model = load_model('traffic_sign_seq_lowaccuracy.h5', compile = True)
 '''
-model.load_weights('traffic_sign_seq_highaccuracy.h5', by_name=True)
+model.load_weights('traffic_sign_seq_lowaccuracy.h5', by_name=True)
 
 model.compile(optimizer=tf.train.AdamOptimizer(),
 			loss='categorical_crossentropy',
