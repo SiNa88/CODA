@@ -6,14 +6,14 @@ microservices0 = ["encoding", "framing", "lowAccuracy", "highAccuracy", "transco
 
 microservices = ["encoding", "highAccuracy" , "transcoding"]
 
-#               Cloud   EGS   NvJ   RPi4  RPi3
+#               EGS   Lenovo   NvJ   RPi4  RPi3
 encode_200  = [0.17,0.33,1.9,2.16, 2.5] #seconds
 encode_1500 = [0.36,0.42,2.63,3.19,7.35] #seconds
 encode_3000 = [0.47,0.59,3.48,4.4,8.44] #seconds
 encode_6500 = [1.22,1.59,9.68,11.8,22.7] #seconds
 encode_20000 = [2.69,3.16,20.64,28,60] #seconds
 
-#                                Cloud   EGS   NvJ   RPi4  RPi3  
+#                               EGS   Lenovo   NvJ   RPi4  RPi3  
 Low_accuracy_training_model = [16.99, 17.8 , 151.4  , 101.864 , 1000] #seconds
 High_accuracy_training_model = [33.23, 56.746 , 232.253 , 466.830 , 1000] #seconds
 
