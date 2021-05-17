@@ -1,20 +1,20 @@
 t-1:
 - 'encoding'
 - 'training'
-#- 'packaging'
+- 'transcoding'
 e-0:
 - 'encoding'
 - 'training'
-#- 'packaging'
+- 'transcoding'
 e-1:
 - 'encoding'
 - 'training'
-#- 'packaging'
+- 'transcoding'
 e-2:
 - 'encoding'
 - 'training'
-#- 'packaging'
+- 'transcoding'
 vm1-cdc: 
 - 'encoding'
 - 'training'
-#- 'packaging'
+- 'transcoding'
