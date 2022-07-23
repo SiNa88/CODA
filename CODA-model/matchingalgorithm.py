@@ -5,9 +5,9 @@ import urllib
 import yaml
 from yaml import load, dump, Loader
 
-resident_preferences = yaml.full_load(open('microservices.yml', 'r'))
-hospital_preferences = yaml.full_load(open('resources.yml', 'r'))
-hospital_capacities = yaml.full_load(open('capacities.yml', 'r'))
+resident_preferences = yaml.full_load(open('microservices-testbed.yml', 'r'))
+hospital_preferences = yaml.full_load(open('resources-testbed.yml', 'r'))
+hospital_capacities = yaml.full_load(open('capacities-testbed.yml', 'r'))
 
 
 #print(len(resident_preferences), len(hospital_preferences), sum(hospital_capacities.values()))
